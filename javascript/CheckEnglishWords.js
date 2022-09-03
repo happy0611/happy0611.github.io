@@ -1,6 +1,6 @@
 let exercise_books =
     [
-    ["スタート","スタートを入力して初めてください","start"],
+    ["start","startを入力して始めてください","start"],
     ["こんにちは世界", "こんにちは → hello", "hello world"],
     ["助けが必要ですか？", "符号(？。、)は不要", "do you need help"],
     ["彼らはまだ入院中です","病院 → hospital", "they are still in the hospital"],
@@ -9,9 +9,6 @@ let exercise_books =
 ];
 
 let english_index = 0;
-
-// let startDisplay = document.getElementById("DisplayedEnglish").textContent;
-// startDisplay = exercise_books[0][1];
 
 function changedisplayenglish(index) {
     let display = document.getElementById("DisplayedEnglish"); 
@@ -27,7 +24,6 @@ function buttonclick2() {
     let text = document.getElementById("text1").value;
     console.log(text);
     //正しいかどうかを判定する
-    console.log(DisplayEnglish,text)
     if (exercise_books[english_index][2] == text){
         result.textContent = "〇";
         changedisplayenglish(english_index);
