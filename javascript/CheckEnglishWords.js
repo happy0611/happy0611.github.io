@@ -10,27 +10,43 @@ let exercise_books =
 
 let english_index = 0;
 
+
 function changedisplayenglish(index) {
-    let display = document.getElementById("DisplayedEnglish"); 
-    display.textContent = exercise_books[index][0]; //textcontentはここに書く
+    let question = document.getElementById("DisplayedEnglish"); 
+    //(今日の任務)hint を表示するようにしてください
+    let hint = document.getElementById("hint");
+    hint.textContent = exercise_books[index][1];
+    //(今日の任務)正解 を表示するようにしてください
+    let right = document.getElementById("right");
+    right.textContent = exercise_books[index][2]
+    
+    question.textContent = exercise_books[index][0]; //textcontentはここに書く
     console.log("change");
+}
+
+function start() {
+    alert("今日も一緒に頑張りましょう！");
+    english_index = 0;
+    changedisplayenglish(english_index);
+    // english_index += 1;
 }
 
 function buttonclick2() {
     //入力した文字を取得
     let result = document.getElementById("result");
     let DisplayEnglish = document.getElementById("DisplayedEnglish").textContent; //input以外の要素を取得するにはvalueではなくtextContentなどを使う
-    console.log(DisplayEnglish);
+    console.log("DisplayEnglish: " + DisplayEnglish);
     let text = document.getElementById("text1").value;
-    console.log(text);
+    console.log("get text: " + text);
     //正しいかどうかを判定する
     if (exercise_books[english_index][2] == text){
         result.textContent = "〇";
+        english_index += 1;
         changedisplayenglish(english_index);
         // console.log("38のindexの今の数字は" + english_index);
-        english_index += 1;
     } else {
         result.textContent = "×";
     }
     //もし正しいであれば丸とid=resultの所で表示する
 }
+

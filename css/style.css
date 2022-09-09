@@ -1,25 +1,75 @@
+/* (今日の任務)https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics */
+
 h1,
 p,
+
 div {
-  text-align: center
+  text-align: center;
+  width: auto;
+  height: auto;
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(202, 243, 255);
 }
 
 h1 {
-  color: #333;
-  font-size: 4rem;
-  padding-top: 0.5em;
+  color: rgb(26, 26, 26);
+  font-size: 5rem;
+  padding-top: 0em;
   font-family: "MS Pゴシック", sans-serif, Meiryo;
 
 }
 
+.text {
+  border: 2px solid #000000; 
+  z-index: 10;
+  outline: 0;
+  width: auto;
+  padding: 0px 50px;
+}
+
+.bigfont {
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  /* ボタンのサイズを変える */
+  width: 4em;
+  height: 2em;
+  border-width: 0.7pt;
+  margin-top: 0.5em;
+  font-weight: 550;
+  border-radius: 7px;
+}
+
 .shadowbox {
-  width: 15em;
+  width: auto;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border: 1px solid #333;
   box-shadow: 8px 8px 5px #444;
   padding: 8px 12px;
   background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+
+
+/* footer のためのcss */
+html,
+body,
+form {
+  height: 100%;
+}
+
+.Wrapper {
+  min-height: 100%;
+}
+
+.Wrapper .FooterPush {
+  height: 120px;
+}
+
+.Footer {
+  clear: both;
+  position: relative;
+  margin-top: -120px;
+  height: 120px;
 }

@@ -1,18 +1,38 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>響也英語学習</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="javascript/CheckEnglishWords.js"></script>
-        <script type="text/javascript" src="javascript/DisplayEnglishWords.js"></script>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>響也英語学習</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+<body>
+    <h1>英語学習サイト</h1>
+    <p id="DisplayedEnglish" class="shadowbox">開始を押して始めよう</p>
+    <p id="hint"></p>
+    <p id="right"></p>
+
+    <div><input type="text" id="text1" class="text"></div>
+    <div><input type="button" value="確認" onclick="buttonclick2()" class="bigfont"></div>
+    <div><input type="button" value="開始" onclick="start()" class="bigfont"></div>
+
+    <p id="result"></p>
+
     <body>
-        <h1>英語学習サイト</h1>
-        <p id="DisplayedEnglish">hello</p>
-        
-        <div><input type="text" id="text1"></div>
-        <div><input type="button" value="確認" onclick="buttonclick2()"></div>
-        
-        <p id="result"></p>
+        <form> 
+          <div class="Wrapper">
+            <div class="Header"></div>
+            <div class="Content"></div>
+            <div class="FooterPush"></div>
+          </div>
+          <div class="Footer">designed by 山崎響也 </div>
+        </form>
     </body>
+
+</body>
+<script type="text/javascript" src="javascript/CheckEnglishWords.js"></script>
+<script type="text/javascript" src="javascript/DisplayEnglishWords.js"></script>
+
 </html>
