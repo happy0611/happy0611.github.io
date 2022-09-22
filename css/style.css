@@ -41,6 +41,19 @@ h1 {
   border-radius: 7px;
 }
 
+.font {
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  /* ボタンのサイズを変える */
+  width: 4em;
+  height: 2em;
+  border-width: 0.7pt;
+  margin-top: 0.5em;
+  font-weight: 550;
+  border-radius: 7px;
+  margin-top: 1.5em;
+}
+
 .shadowbox {
   width: auto;
   font-size: large;
